@@ -49,11 +49,11 @@ namespace InheritanceOOP
                 this.PhysicsGrade = PhysicsGrade;
                 this.InformaticsGrade = InformaticsGrade;
                 
-                base.Intro();
+                 base.Intro();
             }
 
 
-            public override void Intro()
+            public override void Intro()  //here we OVERRIDE the method from the base class , so we can use it with the additional variables from the derived class 
             {
                 Console.WriteLine($"Hello my name is {name}, I am a student from {profile} profile and my  GPA is: {GPA} and my math grade is {MathGrade} , my Informatics grade is{InformaticsGrade} and my Physics grade is {PhysicsGrade} ");
             }
